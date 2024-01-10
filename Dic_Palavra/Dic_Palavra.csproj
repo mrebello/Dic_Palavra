@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="HotLIB" Version="1.0.8635.582-beta" />
+    <PackageReference Include="HotLIB" Version="1.0.8775.958-beta" />
   </ItemGroup>
 
   <ItemGroup>
