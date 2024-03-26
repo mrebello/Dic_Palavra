@@ -30,7 +30,7 @@ partial class Form1 {
         LV_Lista = new ListView();
         Termo = new ColumnHeader();
         Extenso = new ColumnHeader();
-        Desc_Termo = new ColumnHeader();
+        Descr_Termo = new ColumnHeader();
         flowLayoutPanel1 = new FlowLayoutPanel();
         label1 = new Label();
         T_Termo = new TextBox();
@@ -70,7 +70,7 @@ partial class Form1 {
         // 
         // LV_Lista
         // 
-        LV_Lista.Columns.AddRange(new ColumnHeader[] { Termo, Extenso, Desc_Termo });
+        LV_Lista.Columns.AddRange(new ColumnHeader[] { Termo, Extenso, Descr_Termo });
         LV_Lista.Dock = DockStyle.Fill;
         LV_Lista.Location = new Point(3, 3);
         LV_Lista.Name = "LV_Lista";
@@ -89,10 +89,10 @@ partial class Form1 {
         Extenso.Text = "Extenso";
         Extenso.Width = 89;
         // 
-        // Desc_Termo
+        // Descr_Termo
         // 
-        Desc_Termo.Text = "Descrição";
-        Desc_Termo.Width = 320;
+        Descr_Termo.Text = "Descrição";
+        Descr_Termo.Width = 320;
         // 
         // flowLayoutPanel1
         // 
@@ -200,7 +200,7 @@ partial class Form1 {
     private ListView LV_Lista;
     private ColumnHeader Termo;
     private ColumnHeader Extenso;
-    private ColumnHeader Desc_Termo;
+    private ColumnHeader Descr_Termo;
     private System.Windows.Forms.Timer timer1;
     private FlowLayoutPanel flowLayoutPanel1;
     private Label label1;

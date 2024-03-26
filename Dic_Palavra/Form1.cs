@@ -66,7 +66,7 @@ public partial class Form1 : Form {
                 LV_Lista.Items.Add(new ListViewItem(new string[3] {
                     rs["Termo"].ToStr() ?? "",
                     rs["Extenso"].ToStr() ?? "",
-                    rs["Desc_Termo"].ToStr() ?? ""
+                    rs["Descr_Termo"].ToStr() ?? ""
                 }));
             }
         }
@@ -78,7 +78,7 @@ public partial class Form1 : Form {
     private void button1_Click(object sender, EventArgs e) {
         if (T_Termo.Text == "") return;
         if (MessageBox.Show("Confirma a gravação?","Salvar",MessageBoxButtons.OKCancel)==DialogResult.OK) {
-            BD.Loja.SQLCmd("INSERT INTO Meta.Dic_Palavra (Termo,Extenso,Desc_Termo) VALUES (@1,@2,@3);",
+            BD.Loja.SQLCmd("INSERT INTO Meta.Dic_Palavra (Termo,Extenso,Descr_Termo) VALUES (@1,@2,@3);",
                 T_Termo.Text, T_Extenso.Text, T_Descricao.Text);
         }
     }
